@@ -10,4 +10,4 @@ class Employee(BaseModel):
 
 class User(BaseModel):
     username: str = Field(..., min_length=3, max_length=20, description="Username for the employee", example="johndoe")
-    email: str = Field(..., regex=r'^\S+@\S+\.\S+$', description="Employee's email address", example=" 
+    email: str = Field(..., regex=r'^\S+@\S+\.\S+$', description="Employee's email address", example="employee@example.com")
